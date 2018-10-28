@@ -1,22 +1,53 @@
 <html>
-    <head>
-        <header>The blog</header>
-        <style>{
-            padding-bottom: 30px;
+
+<head>
+    <header class="the_blog">The blog</header>
+    <style>
+        .the_blog {
+background: #606060;
+border: 5px solid black;
+padding: 20px 20px;
+width: 600px;
+color: white;
+font-size: 28px;
+}
+.body {
+    background: #d2d1d1ed;
+}
+        .textarea {
+            padding-bottom: 20px;
         }</style>
-    </head>
-    <body>
-        <div>
-            <header>Add new post</header>
-        </div>
-        <div>
-            <header>Title</header>
-            <input type="text">
-        </div>
-        <div>
-            <header>Content</header>
-            <textarea></textarea>
-            <button>Submit</button>
-        </div>
-    </body>
+</head>
+
+<body class="body">
+    <div class="form_borders">
+        <header>Add new post</header>
+    </div>
+    <div>
+        <header>Title</header>
+        <input type="text">
+    </div>
+    <div class="textarea">
+        <header>Content</header>
+        <textarea class="first_textarea"></textarea>
+    </div>
+    <div>
+        <button>Submit</button>
+    </div>
+    <div class="posts">
+        <header>Posts</header>
+    </div>
+    <div>
+        <textarea>
+First post
+            </textarea>
+    </div>
+    <div>
+        <textarea>
+Second post
+            </textarea>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Alex_blog_script.js"></script>
+</body>
 </html>
